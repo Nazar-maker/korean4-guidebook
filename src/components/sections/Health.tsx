@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Chart as ChartJS } from 'chart.js/auto';
+import { getAssetPath } from '../../utils/getAssetPath';
 
 export default function Health() {
   const chartRef = useRef<HTMLCanvasElement>(null);
@@ -9,27 +10,27 @@ export default function Health() {
 
   const foodImages: Record<string, string[]> = {
     '샐러드 및 닭가슴살': [
-      '/salad_chicken.jpg',
-      '/salad_chicken2.jpg',
-      '/chicken.png',
-      '/chicken2.png'
+      getAssetPath('/salad_chicken.jpg'),
+      getAssetPath('/salad_chicken2.jpg'),
+      getAssetPath('/chicken.png'),
+      getAssetPath('/chicken2.png')
     ],
     '바나나 및 요거트': [
-      '/banana.avif',
-      '/banana1.jpg',
-      '/yogurt.jpg',
-      '/yogurt1.webp'
+      getAssetPath('/banana.avif'),
+      getAssetPath('/banana1.jpg'),
+      getAssetPath('/yogurt.jpg'),
+      getAssetPath('/yogurt1.webp')
     ],
     '건강 음료': [
-      '/vitamin.avif',
-      '/vitamin1.jpg',
-      '/vitamin2.jpg'
+      getAssetPath('/vitamin.avif'),
+      getAssetPath('/vitamin1.jpg'),
+      getAssetPath('/vitamin2.jpg')
     ],
     '단백질 쉐이크': [
-      '/protein.jpg',
-      '/protein1.jpg',
-      '/protein3.png',
-      '/protein4.jpg'
+      getAssetPath('/protein.jpg'),
+      getAssetPath('/protein1.jpg'),
+      getAssetPath('/protein3.png'),
+      getAssetPath('/protein4.jpg')
     ]
   };
 
@@ -310,7 +311,7 @@ export default function Health() {
                 borderRadius: '8px'
               }}>
                 <img 
-                  src="/fitness_center.jpg" 
+                  src={getAssetPath('/fitness_center.jpg')} 
                   alt="Fitness Center 1"
                   style={{
                     width: '100%',
@@ -320,7 +321,7 @@ export default function Health() {
                   }}
                 />
                 <img 
-                  src="/fitness_center2.jpg" 
+                  src={getAssetPath('/fitness_center2.jpg')} 
                   alt="Fitness Center 2"
                   style={{
                     width: '100%',

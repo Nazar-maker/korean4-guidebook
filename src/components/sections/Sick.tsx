@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { getAssetPath } from '../../utils/getAssetPath';
 
 export default function Sick() {
   const [showMap, setShowMap] = useState(false);
@@ -124,7 +125,7 @@ export default function Sick() {
               background: 'white'
             }}>
               <img 
-                src="/campus_map.png" 
+                src={getAssetPath('/campus_map.png')} 
                 alt="KAIST Campus Map - E21 Building Location" 
                 style={{ 
                   width: '100%', 
