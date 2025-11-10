@@ -248,7 +248,7 @@ export default function Sick() {
             }}
           >
             <h3 className="text-xl font-bold text-slate-800 mb-4">약국 (Pharmacy)</h3>
-            <div className="space-y-3 text-slate-600">
+            <div className="space-y-3 text-slate-600 mb-4">
               <div style={{ display: 'flex', gap: '12px' }}>
                 <span style={{ 
                   fontWeight: 'bold', 
@@ -277,6 +277,166 @@ export default function Sick() {
                   fontSize: '0.875rem'
                 }}>약 종류</span>
                 <span style={{ flex: 1 }}>처방전이 필요한 약, 감기약/소화제/밴드 등 처방전 없이 사는 약</span>
+              </div>
+            </div>
+
+            <div style={{ 
+              marginTop: '20px',
+              paddingTop: '16px',
+              borderTop: '1px solid #e5e7eb'
+            }}>
+              <h4 className="font-bold text-slate-800 mb-3" style={{ fontSize: '1rem' }}>
+                일반 의약품 가이드 (Common Over-the-Counter Medicines)
+              </h4>
+              
+              <div style={{ 
+                display: 'grid', 
+                gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', 
+                gap: '12px' 
+              }}>
+                {/* Tylenol - Pain/Fever */}
+                <div style={{
+                  background: '#f9fafb',
+                  padding: '12px',
+                  borderRadius: '8px',
+                  border: '1px solid #e5e7eb',
+                  textAlign: 'center'
+                }}>
+                  <img 
+                    src={getAssetPath('/tylenol.webp')} 
+                    alt="Tylenol"
+                    style={{
+                      width: '100%',
+                      height: '100px',
+                      objectFit: 'contain',
+                      marginBottom: '8px'
+                    }}
+                  />
+                  <p style={{ fontWeight: '600', fontSize: '0.875rem', color: '#1e40af' }}>타이레놀</p>
+                  <p style={{ fontSize: '0.75rem', color: '#64748b', marginTop: '4px' }}>
+                    진통제/해열제<br/>Pain/Fever relief
+                  </p>
+                </div>
+
+                {/* Panpyrin - Cold/Flu */}
+                <div style={{
+                  background: '#f9fafb',
+                  padding: '12px',
+                  borderRadius: '8px',
+                  border: '1px solid #e5e7eb',
+                  textAlign: 'center'
+                }}>
+                  <img 
+                    src={getAssetPath('/Panpyrin.png')} 
+                    alt="Panpyrin"
+                    style={{
+                      width: '100%',
+                      height: '100px',
+                      objectFit: 'contain',
+                      marginBottom: '8px'
+                    }}
+                  />
+                  <p style={{ fontWeight: '600', fontSize: '0.875rem', color: '#1e40af' }}>판피린</p>
+                  <p style={{ fontSize: '0.75rem', color: '#64748b', marginTop: '4px' }}>
+                    감기약<br/>Cold medicine
+                  </p>
+                </div>
+
+                {/* Pancold - Cold/Flu */}
+                <div style={{
+                  background: '#f9fafb',
+                  padding: '12px',
+                  borderRadius: '8px',
+                  border: '1px solid #e5e7eb',
+                  textAlign: 'center'
+                }}>
+                  <img 
+                    src={getAssetPath('/pancold.png')} 
+                    alt="Pancold"
+                    style={{
+                      width: '100%',
+                      height: '100px',
+                      objectFit: 'contain',
+                      marginBottom: '8px'
+                    }}
+                  />
+                  <p style={{ fontWeight: '600', fontSize: '0.875rem', color: '#1e40af' }}>판콜드</p>
+                  <p style={{ fontSize: '0.75rem', color: '#64748b', marginTop: '4px' }}>
+                    감기약<br/>Cold medicine
+                  </p>
+                </div>
+
+                {/* Ibuprofen - Pain/Inflammation */}
+                <div style={{
+                  background: '#f9fafb',
+                  padding: '12px',
+                  borderRadius: '8px',
+                  border: '1px solid #e5e7eb',
+                  textAlign: 'center'
+                }}>
+                  <img 
+                    src={getAssetPath('/ibuprofen.jpg')} 
+                    alt="Ibuprofen"
+                    style={{
+                      width: '100%',
+                      height: '100px',
+                      objectFit: 'contain',
+                      marginBottom: '8px'
+                    }}
+                  />
+                  <p style={{ fontWeight: '600', fontSize: '0.875rem', color: '#1e40af' }}>이부프로펜</p>
+                  <p style={{ fontSize: '0.75rem', color: '#64748b', marginTop: '4px' }}>
+                    진통/소염제<br/>Pain/Anti-inflammatory
+                  </p>
+                </div>
+
+                {/* Zyrtec - Allergy */}
+                <div style={{
+                  background: '#f9fafb',
+                  padding: '12px',
+                  borderRadius: '8px',
+                  border: '1px solid #e5e7eb',
+                  textAlign: 'center'
+                }}>
+                  <img 
+                    src={getAssetPath('/zyrtec.jpg')} 
+                    alt="Zyrtec"
+                    style={{
+                      width: '100%',
+                      height: '100px',
+                      objectFit: 'contain',
+                      marginBottom: '8px'
+                    }}
+                  />
+                  <p style={{ fontWeight: '600', fontSize: '0.875rem', color: '#1e40af' }}>지르텍</p>
+                  <p style={{ fontSize: '0.75rem', color: '#64748b', marginTop: '4px' }}>
+                    알레르기약<br/>Allergy medicine
+                  </p>
+                </div>
+
+                {/* Bearse - Digestive */}
+                <div style={{
+                  background: '#f9fafb',
+                  padding: '12px',
+                  borderRadius: '8px',
+                  border: '1px solid #e5e7eb',
+                  textAlign: 'center'
+                }}>
+                  <img 
+                    src={getAssetPath('/bearse.jpg')} 
+                    alt="Bearse"
+                    style={{
+                      width: '100%',
+                      height: '100px',
+                      objectFit: 'contain',
+                      marginBottom: '8px'
+                    }}
+                  />
+                  <p style={{ fontWeight: '600', fontSize: '0.875rem', color: '#1e40af' }}>베아제</p>
+                  <p style={{ fontSize: '0.75rem', color: '#64748b', marginTop: '4px' }}>
+                    소화제<br/>Digestive aid
+                  </p>
+                </div>
               </div>
             </div>
           </div>
