@@ -286,7 +286,7 @@ export default function Sick() {
               borderTop: '1px solid #e5e7eb'
             }}>
               <h4 className="font-bold text-slate-800 mb-3" style={{ fontSize: '1rem' }}>
-                일반 의약품 가이드 (Common Over-the-Counter Medicines)
+                일반 의약품 가이드
               </h4>
               
               <div style={{ 
